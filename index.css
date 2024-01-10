@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap");
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.heo{
-    height: 100vh;
-    background-color: red;
-    width: 100%;
+.heo {
+  height: 100vh;
+  background-color: red;
+  width: 100%;
 }
 
 .text {
@@ -15,17 +15,23 @@
   font-size: 1.2rem;
   margin: 0 auto;
   border: 2px solid;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+p {
+  overflow: hidden;
+  line-height: 1.8;
+  font-weight: 500;
 
 }
-.body{
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-p{
-    overflow: hidden;
-    line-height: 1.7;
+.line {
+  /* clip-path: polygon(0 50%, 100% 50%, 100% 0, 0 0); */
+  display: inline-block;
+  overflow: hidden;
 }
 
+
+.body {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
