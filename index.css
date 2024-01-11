@@ -1,37 +1,39 @@
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-.heo {
-  height: 100vh;
-  background-color: red;
-  width: 100%;
+.heading-title{
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+header{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
-.text {
-  font-family: "EB Garamond", serif;
-  font-size: 1.2rem;
-  margin: 0 auto;
-  border: 2px solid;
+.subs p{
+    font-family: 'Lexend', sans-serif;
+    color: white;
+    font-size: 12px;
 }
-p {
-  overflow: hidden;
-  line-height: 1.8;
-  font-weight: 500;
+.tabs{
+    font-family: 'Lexend', sans-serif;
+    font-size: 14px;
+    display: flex;
+    gap: 1.4rem;
+    word-spacing: 0.2rem;
 
 }
-.line {
-  /* clip-path: polygon(0 50%, 100% 50%, 100% 0, 0 0); */
-  display: inline-block;
-  overflow: hidden;
+.tabs p{
+    color: #3d3d3d;
+    
 }
-
-
-.body {
-  height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.tabs h6{
+    color: #ee79ac
+}
+.word{
+    opacity: 0;
 }

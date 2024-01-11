@@ -7,20 +7,232 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/Draggable.min.js"></script> -->
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="/index.js"></script>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <section class="heo"></section>
-    <section class="body">
-      <div class="text">
-        <p id="p-text">
-          As SplitText iterates through the characters <br />
-          As SplitText iterates through the characters <br />
-          As SplitText iterates through the characters <br />
-        </p>
+    <section class="py-10 bg-[#1c1d1d] max-h-screen px-4">
+      <div
+        class="max-w-[70rem] mx-auto rounded-[8px]"
+        style="border: 1px solid #3d3d3d"
+      >
+        <header
+          class="bg-[#2d2d2d] flex items-center py-3 px-4"
+          style="border-bottom: 1px solid #3d3d3d"
+        >
+          <div class="controls basis-[5%] flex gap-3">
+            <div
+              class="w-[0.65rem] h-[0.65rem] rounded-full bg-[#EC6A5E]"
+            ></div>
+
+            <div
+              class="w-[0.65rem] h-[0.65rem] rounded-full bg-[#F5BF4F]"
+            ></div>
+
+            <div
+              class="w-[0.65rem] h-[0.65rem] rounded-full bg-[#61C554]"
+            ></div>
+          </div>
+          <div
+            class="heading-title basis-[95%] items-center justify-center flex"
+          >
+            <h1 class="text-[0.9rem]">Hayzedd - SDK integration</h1>
+          </div>
+        </header>
+        <div class="flex items-center bg-[#252526]">
+          <div class="bg-[#1e1e1e] subs">
+            <div class="flex gap-2 px-4 py-2.5">
+              <img src="./react.svg" class="w-4" alt="" />
+              <p>test.tsx</p>
+            </div>
+          </div>
+          <div class="bg-[#2d2d2d] subs">
+            <div class="flex gap-2 px-4 py-2.5">
+              <img src="./react.svg" class="w-4" alt="" />
+              <p>build.tsx</p>
+            </div>
+          </div>
+        </div>
+        <div class="sdk-body min-h-[35rem] py-5 px-5">
+          <div class="flex flex-col gap-[0.45rem]">
+            <div class="tab-1 tabs">
+              <p>1</p>
+              <h6 class="h6-text">
+                Import <span class="text-[#6fbff9]">React</span> from
+                <span class="text-[#f7d17e]">'react'</span>
+                <span class="text-[#c975ce]">;</span>
+              </h6>
+            </div>
+            <div class="tab-2 tabs">
+              <p>2</p>
+              <h6 class="h6-text">
+                Import <span class="text-[#c975ce]">{ </span
+                ><span class="text-[#6fbff9]"> useTest </span>
+                <span class="text-[#c975ce]"> }</span> from
+                <span class="text-[#f7d17e]">'hayzedd-react'</span>
+                <span class="text-[#c975ce]">;</span>
+              </h6>
+            </div>
+            <div class="tab-3 tabs">
+              <p>3</p>
+            </div>
+            <div class="tab-4 tabs">
+              <p>4</p>
+              <h6 class="h6-text">
+                <span class="text-[#8edffb]">export default function</span>
+                <span class="text-[#6fbff9]">App</span>
+                <span class="text-[#c975ce]">( ) {</span>
+              </h6>
+            </div>
+            <div class="tab-5 tabs">
+              <p>5</p>
+              <h6 class="h6-text pl-3">
+                <span class="text-[#8edffb]">const</span>
+                <span class="text-[#6fbff9]">config</span>
+                <span class="text-[#c975ce]">= {</span>
+              </h6>
+            </div>
+            <div class="tab-6 tabs">
+              <p>6</p>
+              <h6 class="h6-text pl-7">
+                <span class="text-[#fff]">publicKey: </span>
+                <span class="text-[#f7d17e]">'MY_PUBLIC_KEY' </span>
+                <span class="text-[#c975ce]">,</span>
+              </h6>
+            </div>
+            <div class="tab-7 tabs">
+              <p>7</p>
+              <h6 class="h6-text pl-7">
+                <span class="text-[#fff]">userReference: </span>
+                <span class="text-[#f7d17e]">'USER_REFERENCE' </span>
+                <span class="text-[#c975ce]">,</span>
+              </h6>
+            </div>
+            <div class="tab-8 tabs">
+              <p>8</p>
+              <h6 class="h6-text pl-7">
+                <span class="text-[#fff]">amount: </span>
+                <span class="text-[#f7d17e]">'AMOUNT_IN_WORDS' </span>
+                <span class="text-[#c975ce]">,</span>
+              </h6>
+            </div>
+            <div class="tab-9 tabs">
+              <p>9</p>
+              <h6 class="h6-text pl-7">
+                <span class="text-[#fff]">currency: </span>
+                <span class="text-[#f7d17e]">'NAIRA' </span>
+                <span class="text-[#c975ce]">,</span>
+              </h6>
+            </div>
+            <div class="tab-10 tabs">
+              <p>10</p>
+              <h6 class="h6-text pl-[1.4rem]">
+                <span class="text-[#fff]">note: </span>
+                <span class="text-[#c975ce]">{</span>
+              </h6>
+            </div>
+            <div class="tab-11 tabs">
+              <p>11</p>
+              <h6 class="h6-text pl-10">
+                <span class="text-[#fff]">description: </span>
+                <span class="text-[#f7d17e]">'Shopping' </span>
+                <span class="text-[#c975ce]">,</span>
+              </h6>
+            </div>
+            <div class="tab-12 tabs">
+              <p>12</p>
+              <h6 class="h6-text pl-[1.4rem]">
+                <span class="text-[#c975ce]">}</span>
+              </h6>
+            </div>
+            <div class="tab-13 tabs">
+              <p>13</p>
+              <h6 class="h6-text pl-0">
+                <span class="text-[#c975ce]">};</span>
+              </h6>
+            </div>
+            <div class="tab-14 tabs">
+              <p>14</p>
+              <h6 class="h6-text pl-0"></h6>
+            </div>
+            <div class="tab-15 tabs">
+              <p>15</p>
+              <h6 class="h6-text pl-0">
+                <span class="text-[#8edffb]">const</span>
+                <span class="text-[#6fbff9]">handleTest</span>
+                <span class="text-[#c975ce]">= </span>
+                <span class="text-[#6fbff9]">useTest</span>
+                <span class="text-[#c975ce]"
+                  >(<span class="text-[#6fbff9]">config</span
+                  ><span class="text-[#c975ce]">)</span></span
+                >
+              </h6>
+            </div>
+            <div class="tab-16 tabs">
+              <p>16</p>
+              <h6 class="h6-text pl-0">
+                <span class="text-[#8edffb]">return</span>
+                <span class="text-[#c975ce]">(</span>
+              </h6>
+            </div>
+            <div class="tab-17 tabs">
+              <p>17</p>
+              <h6 class="h6-text pl-3">
+                <span class="text-[#c975ce]"
+                  ><<span class="text-[#ee79ac]"
+                    >div
+                    <span class="text-[#8edffb]"
+                      >className<span class="text-[#c975ce]">=</span><span class="text-[#f7d17e]">"App"</span><span class="text-[#c975ce]">></span></span
+                    ></span
+                  ></span
+                >
+              </h6>
+            </div>
+            <div class="tab-18 tabs">
+              <p>18</p>
+              <h6 class="h6-text pl-6">
+                <span class="text-[#c975ce]"
+                  ><<span class="text-[#ee79ac]"
+                    >button
+                    <span class="text-[#8edffb]"
+                      >onClick<span class="text-[#c975ce]">={</span><span class="text-[#6fbff9]">handleTest</span><span  class="text-[#c975ce]">}</span></span><span class="text-[#c975ce]">></span><span class="text-[#fff]">Test Sdk</span><span class="text-[#c975ce]"><</span><span class="text-[#c975ce]">/</span><span class="text-[#ee79ac]"
+                      >button</span><span class="text-[#c975ce]"
+                      >></span></span
+                    ></span
+                  ></span
+                >
+              </h6>
+            </div>
+            <div class="tab-19 tabs">
+              <p>17</p>
+              <h6 class="h6-text pl-3">
+                
+                <span class="text-[#c975ce]"
+                  ><<span class="text-[#c975ce]">/</span><span class="text-[#ee79ac]"
+                    >div
+                    
+                  </span
+          
+                >
+              </h6>
+            </div>
+            <div class="tab-20 tabs">
+              <p>20</p>
+              <h6 class="h6-text pl-2">
+                
+                <span class="text-[#c975ce]"
+                  >)
+              </h6>
+            </div>
+            <div class="tab-21 tabs">
+              <p>21</p>
+              <h6 class="h6-text pl-0">
+                <span class="text-[#c975ce]">};</span>
+              </h6>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </body>
