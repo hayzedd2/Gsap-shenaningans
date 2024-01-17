@@ -42,18 +42,3 @@ header{
     position: relative;
     /* background-color: green; */
 }
-
-.bg-text{
-    font-family: 'Lexend', sans-serif;
-    font-weight: 500;
-}
-.createddiv{
-    position: absolute;
-    background-color: red;
-    z-index: 999;
-    height: 100%;
-    width: 100%;
-    margin-top:10px ;
-    top: 0;
-    /* background-color: red; */
-}
